@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+       
+    <title>Basket</title>
+</head>
+
+<body>
+    <!-- NavBar Start -->
+    <div class="navBasket" id="nav"><a href="index.html">
+            <h1>Phone Shop</h1>
+        </a>
+        <div class="inp"><input type="text" id="input" placeholder="Search...">
+            <i class="fa-solid fa-magnifying-glass findi" id="magnifier"></i>
+        </div>
+
+        <a href="basket.html"><i class="fa-solid fa-basket-shopping basketi" id="basketi"></i></a>
+
+    </div>
+    <nav>
+
+        <ul>
+            <li id="allphones">All Phones</li>
+            <li id="iphone">Iphone</li>
+            <li id="samsung">Samsung</li>
+            <li id="huawei">Huawei</li>
+            <li id="nokia">Nokia</li>
+            <li id="asus">Asus</li>
+            <li id="xiaomi">Xiaomi</li>
+        </ul>
+        <button id="toggleButton"><i class="fa-solid fa-circle-half-stroke"></i></button>
+
+    </nav>
+    <!-- NavBar End -->
+    <!-- Cards Start -->
+    <main>
+        <p id="basketNumber"></p>
+
+        <div id="product-container" class="card-container">
+
+
+        </div>
+
+
+
+    </main>
+    <!-- Cards End -->
+
+
+ <div class="scrollHome">
+   <a href="#nav"><i id="scroll" class="fa-solid fa-arrow-up"></i></a> 
+ </div>
+
+ <footer id="footer"></footer>
+<div id="end"></div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <script src="main.js" type="module"></script>
+    <script src="products.js"></script>
+</body>
+
+</html>

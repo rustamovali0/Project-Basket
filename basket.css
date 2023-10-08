@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: lightskyblue;
+}
+/* Custom Scroll */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0);
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000000;
+}
+
+/* CustomScrollBar */
+.navBasket {
+  width: 100%;
+  height: 70px;
+  background-color:rgb(49, 48, 48);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navBasket h1 {
+  color: rgb(235, 86, 86);
+}
+.basketi {
+  font-size: 2rem;
+  color: rgb(230, 67, 17);
+  cursor: pointer;
+}
+
+.card {
+  width: 23rem;
+  height: 34rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  position: relative;
+  text-align: center;
+  transition: box-shadow 0.1s ease;
+
+}
+
+.card:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  margin-top: 5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.imageDiv {
+  width: 16rem;
+  margin-top: 1rem;
+}
+.saleH1 {
+  width: 10rem;
+  height: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.776);
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 1.1rem;
+  color: rgb(247, 49, 49);
+  border-radius: 11px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.titleH2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.8rem;
+}
+.descriptionP {
+  font-size: 1.15rem;
+  color: rgba(0, 0, 0, 0.61);
+}
+
+.price-container {
+  align-items: center;
+  margin-top: 20px;
+}
+
+.priceOwn {
+  color: green;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-weight: 600;
+}
+
+.priceSale {
+  color: rgb(35, 139, 15);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.eyriXett {
+  width: 85px;
+  height: 1.5px;
+  background-color: rgb(255, 0, 0);
+  position: absolute;
+  top: 394px;
+  left: 130px;
+}
+.imageDiv {
+  width: 16rem;
+  margin-top: 1rem;
+}
+#basketNumber {
+  font-size: 18px;
+  background-color: red;
+  width: 20px;
+  height: 25px;
+  position: absolute;
+  top: 5px;
+  right: 185px;
+  text-align: center;
+  padding-bottom: 25px;
+  padding-right: 2px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  display: none;
+}
+
+/* .button{
+        width: 15rem;
+        height: 3.5rem;
+        background-color: #fc5050;
+        font-size: 1.8rem;
+        color: white;
+        font-weight: 500;
+        border: none;
+
+    } */
+
+.button {
+  width: 17rem;
+  height: 3.5rem;
+  background-color: #df1313;
+  font-size: 1.8rem;
+  margin-top: 10px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+  box-shadow: none;
+  transform: translateY(2px);
+}
+
+#removeAll{
+  width: 17rem;
+  height: 5rem;
+  background-color: #df1313;
+  font-size: 1.8rem;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 90px;
+}
+
+#basketNumber2{
+    font-size: 18px;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+    right: 400px; 
+ text-align: center;
+    padding-bottom: 25px;
+    padding-right: 2px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600; 
+
+}
+
+
+
+.countElement{
+  font-size: 1.7rem;
+}
+
+
+footer{
+  width: 100%;
+  height: 14.8rem;
+  background-color:rgb(49, 48, 48);
+margin-top: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column-reverse;
+}
+footer p{
+  color: white;
+  height: 14.8rem;
+
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#end{
+  width: 100%;
+  height: 2rem;
+  background-color:rgb(34, 33, 33);
+}
+
+.scrollHome i{
+  position: fixed;
+bottom: 20px;
+ right: 40px;
+ font-size: 40px;
+  color: black;
+
+}
+#toggleButton{
+  margin-left: 50px;
+  width: 5rem;
+  height: 2rem;
+background-color: rgb(49, 48, 48);
+  border: 2px solid rgb(0, 48, 48);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ font-weight: bold;
+ position: absolute;
+ top: 20px;
+ right: 10px;
+ cursor: pointer;
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}

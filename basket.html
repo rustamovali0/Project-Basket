@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket</title>
+    <link rel="stylesheet" href="basket.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="navBasket" id="nav2"><a href="index.html"><h1>Phone Shop</h1></a>
+    
+   <i class="fa-solid fa-basket-shopping basketi" id="basketi"></i>
+   <button id="toggleButton"><i class="fa-solid fa-circle-half-stroke"></i></button>
+
+    </div>
+
+    <main>
+        <p id="basketNumber2"></p>
+
+        <div id="product-container" class="card-container">
+
+        </div>
+        <p id="notFound"></p>
+    </main>       
+<footer id="footer">
+    <button id="removeAll">Remove All</button>
+
+<p>Total Price: <span id="spanPrice"></span></p>
+</footer>
+<div id="end"></div>
+
+<div class="scrollHome">
+    <a href="#nav2"><i id="scroll" class="fa-solid fa-arrow-up"></i></a> 
+  </div>
+
+    <script src="basket.js"></script>
+
+</body>
+</html>

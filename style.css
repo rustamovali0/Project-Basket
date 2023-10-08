@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: lightskyblue;
+}
+/* Custom Scroll */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0);
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000000;
+}
+
+/* CustomScrollBar */
+.navBasket {
+  width: 100%;
+  height: 70px;
+  background-color: rgb(49, 48, 48);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navBasket h1 {
+  color: rgb(235, 86, 86);
+}
+.basketi {
+  font-size: 2rem;
+  color: rgb(230, 67, 17);
+  cursor: pointer;
+}
+.findi {
+  font-size: 1.6rem;
+  width: 2rem;
+  height: 2.5rem;
+}
+.inp {
+  background-color: rgb(230, 67, 17);
+  width: 27.7rem;
+  height: 2.5rem;
+  border-bottom-right-radius: 7px;
+}
+.inp input {
+  width: 25rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+}
+nav {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(230, 67, 17);
+}
+
+nav ul {
+  display: flex;
+  font-size: 1.5rem;
+  color: white;
+  justify-content: center;
+  line-height: 43px;
+  padding-top: 7px;
+}
+
+nav ul li {
+  margin-right: 40px;
+  display: flex;
+  align-items: center;
+
+  text-align: center;
+  padding: 1px 9px;
+  cursor: pointer;
+}
+nav ul li:hover {
+  background-color: rgb(0, 0, 0);
+  border-radius: 50px;
+}
+nav ul .all {
+  background-color: rgb(0, 0, 0);
+  border-radius: 50px;
+}
+nav ul li.active,
+nav ul li:hover {
+  background-color: rgb(0, 0, 0);
+  border-radius: 50px;
+}
+
+.card {
+  width: 23rem;
+  height: 34rem;
+  background-color:white;
+  border-radius: 20px;
+  position: relative;
+  transition: box-shadow 0.1s ease;
+
+}
+.card:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+  margin-top: 5rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+#product-container {
+  text-align: center;
+}
+
+.eyriXett {
+  width: 85px;
+  height: 1.5px;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  top: 442px;
+  left: 55px;
+  transform: rotate(-9deg);
+}
+.imageDiv {
+  width: 16rem;
+  margin-top: 1rem;
+}
+.saleH1 {
+  width: 10rem;
+  height: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.776);
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 1.1rem;
+  color: rgb(247, 49, 49);
+  border-radius: 11px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.titleH2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.8rem;
+  color: black;
+}
+.descriptionP {
+  font-size: 1.15rem;
+  color: gray;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 55px;
+}
+
+.priceOwn {
+  color: rgb(0, 0, 0);
+  margin-right: 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.priceSale {
+  color: rgb(35, 139, 15);
+  margin-left: 15px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.addCart {
+  width: 190px;
+  height: 40px;
+  margin-top: 30px;
+  font-weight: 600;
+  color: white;
+  /* background-color: blue; */
+  /* border: 1px solid blue; */
+  /* border-radius: 9px; */
+  background-color: #6607ff;
+  border: none;
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.addCart:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.addCart:active {
+  box-shadow: none;
+  transform: translateY(2px);
+}
+
+#basketNumber {
+  font-size: 18px;
+  background-color: red;
+  width: 20px;
+  height: 25px;
+  position: absolute;
+  top: 5px;
+  right: 185px;
+  text-align: center;
+  padding-bottom: 25px;
+  padding-right: 2px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  display: none;
+}
+
+.scrollHome i{
+  position: fixed;
+bottom: 20px;
+ right: 40px;
+ font-size: 40px;
+  color: black;
+
+}
+
+footer{
+  width: 100%;
+  height: 5rem;
+  background-color:rgb(49, 48, 48);
+margin-top: 40px;
+
+}
+
+#end{
+  width: 100%;
+  height: 2rem;
+  background-color:rgb(34, 33, 33);
+}
+#toggleButton{
+  margin-left: 50px;
+  width: 5rem;
+  height: 2rem;
+background-color: rgb(49, 48, 48);
+  border: 2px solid rgb(0, 48, 48);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ font-weight: bold;
+ position: absolute;
+ top: 20px;
+ right: 10px;
+ cursor: pointer;
+ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
